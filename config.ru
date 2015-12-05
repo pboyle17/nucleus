@@ -5,4 +5,4 @@ require './controllers/account'
 require './models/account'
 
 
-map('/') {run ApplicationController}
+map('/') {run AccountsController}

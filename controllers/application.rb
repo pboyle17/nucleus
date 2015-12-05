@@ -11,13 +11,4 @@ class ApplicationController < Sinatra::Base
 
   set :views, File.expand_path('../../views',__FILE__)
 
-  get '/' do
-    erb :login
-  end
-
-  get '/login' do
-    erb :login
-  end
-
-
 end
