@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   )
 
   set :views, File.expand_path('../../views',__FILE__)
+  set :public_dir, File.expand_path('../../public',__FILE__)
 
   def does_user_exist(username)
   user = Account.find_by(:user_name => username)

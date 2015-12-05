@@ -29,10 +29,14 @@ class ItemsController < ApplicationController
     erb :sell
   end
 
-  post '/update' do
+  post '/update/:id' do
+    @item=Item.find(params[:id])
     erb :update
   end
 
+  get '/confirmation' do
+    erb :confirmation
+  end
 
 
 
