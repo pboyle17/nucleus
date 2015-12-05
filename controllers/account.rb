@@ -4,23 +4,18 @@ class AccountsController < ApplicationController
     erb :not_authorized
   end
 
-
   get '/' do
-    redirect '/login'
-  end
-
-  get '/login' do
     erb :login
   end
 
-  post '/login' do
+  post '/' do
 
     user = Account.authenticate(params[:user_name],params[:password])
     # binding.pry
     if user
       p 'made it to if statement of user block'
       session[:current_user]=user
-      redirect '/success'
+      redirect '/login/success'
 
     else
       p 'made it to the else statement of if user'

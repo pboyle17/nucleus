@@ -29,8 +29,10 @@ def authorization_check
 end
 
 
-# get '/' do
-#   erb :login
-# end
+get '/' do
+  erb :login
+end
+
+
 
 end
