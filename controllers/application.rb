@@ -9,9 +9,15 @@ class ApplicationController < Sinatra::Base
     :database=>'nucleus'
   )
 
+  set :views, File.expand_path('../../views',__FILE__)
+
   get '/' do
-    p 'Hello World!'
+    erb :login
   end
-  
+
+  get '/login' do
+    erb :login
+  end
+
 
 end
