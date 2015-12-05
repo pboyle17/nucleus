@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
-require './controllers/application_controller'
-require './controllers/account_controller'
+require './controllers/application'
+require './controllers/account'
 require './models/account'
 
 

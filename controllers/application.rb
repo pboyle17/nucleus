@@ -1,4 +1,4 @@
-class AppicationController < Sinatra::Base
+class ApplicationController < Sinatra::Base
   require 'bundler'
   Bundler.require
 
@@ -9,5 +9,9 @@ class AppicationController < Sinatra::Base
     :database=>'nucleus'
   )
 
+  get '/' do
+    p 'Hello World!'
+  end
   
+
 end
