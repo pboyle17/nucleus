@@ -20,7 +20,7 @@ class AccountsController < ApplicationController
     else
       p 'made it to the else statement of if user'
 
-      redirect '/incorrect'
+      redirect '/login/incorrect'
     end
   end
 
@@ -45,7 +45,7 @@ class AccountsController < ApplicationController
   get '/success' do
 
     @users=Account.all
-    binding.pry
+    # binding.pry
     erb :success
   end
 
