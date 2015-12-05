@@ -1,13 +1,9 @@
-<h1>Login Page!</h1>
+<h1>Register Page</h1>
 
-<%if @account%>
-  <li> Hello! Thanks for loggin in, <%=@account.user_name%></li>
-<%end%>
-
-<form action="/login" method="post">
+<form action="/register" method="post">
   <label for="name">User Name:</label>
   <input type="text" name="user_name" placeholder='username'>
   <label for="Password"></label>
   <input type="password" name="password" placeholder="password">
-  <input type="submit" value="login">
+  <input type="submit" value="register">
 </form>

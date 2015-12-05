@@ -6,3 +6,4 @@ require './models/account'
 
 
 map('/') {run AccountsController}
+map('/dash') {run ItemsController}
