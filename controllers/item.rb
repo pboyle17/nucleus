@@ -21,12 +21,19 @@ class ItemsController < ApplicationController
   end
 
   get '/list' do
+    @items=Item.all
     erb :list
   end
 
   get '/sell' do
     erb :sell
   end
+
+  post '/update' do
+    erb :update
+  end
+
+
 
 
 
