@@ -1,6 +1,6 @@
 <h1>logged in successfully!</h1>
 <a href="/dash">go to dashboard</a>
 
-<!-- <%if @account%>
-  <li> Hello! Thanks for registering in, <%=@account.user_name%></li>
-<%end%> -->
+<% @users.each do |user|%>
+<l><%=@user[:user].user_name %> : <%= @user[:user].password_digest %></l>
+<%end %>

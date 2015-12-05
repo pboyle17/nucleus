@@ -43,6 +43,9 @@ class AccountsController < ApplicationController
   end
 
   get '/success' do
+
+    @users=Account.all
+    binding.pry
     erb :success
   end
 
