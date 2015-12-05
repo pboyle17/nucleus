@@ -2,6 +2,7 @@ require 'sinatra/base'
 
 require './controllers/application'
 require './controllers/account'
+require './controllers/item'
 require './models/account'
 
 

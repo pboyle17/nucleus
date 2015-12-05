@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  get '/dash' do
-    p 'hello world!'
+  get '/' do
+    erb :dash
   end
 
 end
