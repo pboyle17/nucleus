@@ -34,7 +34,11 @@ class ItemsController < ApplicationController
     erb :update
   end
 
-  get '/confirmation' do
+  post '/confirmation' do
+    @item=Item.find(params[:id])
+    @item.item_name=params[:name]
+    @item.location=params[:location]
+    @item.save
     erb :confirmation
   end
 
