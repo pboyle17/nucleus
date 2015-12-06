@@ -42,6 +42,12 @@ class ItemsController < ApplicationController
     erb :confirmation
   end
 
+  post '/sell/:id' do
+    @item = Item.find(params[:id])
+    @item.destroy
+    p 'item destroyed'
+  end
+
 
 
 
